@@ -1,0 +1,6 @@
+# 本地依赖、编辑器文件和运行日志不进入仓库。
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/

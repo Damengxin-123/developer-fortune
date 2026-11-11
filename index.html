@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="摇一支程序员的好运签，愿工作安稳，代码顺遂。">
+  <title>码上好运 · 程序员求签</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%239d432e'/%3E%3Ctext x='32' y='44' text-anchor='middle' fill='%23fff3d9' font-size='38'%3E签%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="码上好运首页"><span class="brand-seal">签</span><span>码上好运<small>GOOD LUCK, DEVELOPER.</small></span></a>
+    <span class="header-note"><span class="status-dot"></span> 今日宜：顺利收工</span>
+  </header>
+
+  <main>
+    <section class="ritual" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow"><span></span> 开发者的片刻玄学 <span></span></p>
+        <h1 id="page-title">写代码，也要一点<span>好运。</span></h1>
+        <p class="subtitle">放下手中的 Bug，心里默念一个愿望。</p>
+      </div>
+
+      <div class="draw-scene" id="draw-scene">
+        <div class="orbit orbit-outer" aria-hidden="true"></div>
+        <div class="orbit orbit-inner" aria-hidden="true"></div>
+        <span class="scene-note note-left" aria-hidden="true">心诚则灵<br><small>TRUST THE PROCESS</small></span>
+        <span class="scene-note note-right" aria-hidden="true">诸事顺遂<br><small>KEEP SHIPPING</small></span>
+        <span class="spark spark-one" aria-hidden="true">✦</span><span class="spark spark-two" aria-hidden="true">✧</span>
+        <div class="ground-shadow" aria-hidden="true"></div>
+        <button class="tube-button" id="draw-button" aria-label="点击竹签筒，摇一支签" aria-describedby="draw-status">
+          <svg class="tube-art" viewBox="0 0 320 400" role="img" aria-labelledby="tube-title">
+            <title id="tube-title">装满竹签的木质签筒</title>
+            <defs>
+              <linearGradient id="wood" x1="0" x2="1"><stop stop-color="#683c25"/><stop offset=".16" stop-color="#b77a43"/><stop offset=".39" stop-color="#d69b58"/><stop offset=".64" stop-color="#bf8245"/><stop offset=".86" stop-color="#996039"/><stop offset="1" stop-color="#673d29"/></linearGradient>
+              <linearGradient id="bamboo" x1="0" x2="1"><stop stop-color="#aa7337"/><stop offset=".28" stop-color="#f3d28f"/><stop offset=".65" stop-color="#eac17a"/><stop offset="1" stop-color="#b78547"/></linearGradient>
+              <linearGradient id="rim" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f2c78c"/><stop offset=".45" stop-color="#bc854e"/><stop offset="1" stop-color="#6a4029"/></linearGradient>
+              <linearGradient id="label" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#b94e36"/><stop offset="1" stop-color="#843527"/></linearGradient>
+              <pattern id="grain" width="43" height="180" patternUnits="userSpaceOnUse"><path d="M7 0Q0 50 9 95T5 180M24 0Q34 55 22 110T28 180M38 0Q31 35 38 75T37 180" fill="none" stroke="#5c321d" stroke-width=".9" opacity=".18"/><path d="M12 0Q18 68 13 140T15 180" fill="none" stroke="#ffe0a0" opacity=".15"/></pattern>
+              <clipPath id="stick-mask"><path d="M0 0H320V155H251V181Q160 218 69 181V155H0Z"/></clipPath>
+            </defs>
+            <g class="tube-assembly">
+              <ellipse cx="160" cy="183" rx="91" ry="27" fill="#62432c"/>
+              <ellipse cx="160" cy="181" rx="78" ry="19" fill="#30251b"/>
+              <g clip-path="url(#stick-mask)"><g class="sticks">
+                <g class="bamboo-stick" style="--angle:-7deg;--delay:-.08s;--lift:-5px"><rect x="99" y="73" width="15" height="206" rx="4" fill="url(#bamboo)"/><path d="M103 79h7v18h-7z" fill="#a54831"/><path d="M102 115h8m-8 4h8" stroke="#b1874d"/></g>
+                <g class="bamboo-stick" style="--angle:13deg;--delay:-.16s;--lift:-11px"><rect x="183" y="60" width="15" height="210" rx="4" fill="url(#bamboo)"/><path d="M187 66h7v18h-7z" fill="#a54831"/><path d="M186 102h8m-8 4h8" stroke="#b1874d"/></g>
+                <g class="bamboo-stick" style="--angle:-8deg;--delay:-.24s;--lift:-15px"><rect x="126" y="43" width="16" height="231" rx="4" fill="url(#bamboo)"/><path d="M130 49h8v20h-8z" fill="#a54831"/><path d="M129 86h10m-10 4h10" stroke="#b1874d"/></g>
+                <g class="bamboo-stick" style="--angle:11deg;--delay:-.31s;--lift:-8px"><rect x="203" y="99" width="15" height="178" rx="4" fill="url(#bamboo)"/><path d="M207 105h7v18h-7z" fill="#a54831"/></g>
+                <g class="bamboo-stick" style="--angle:-2deg;--delay:-.12s;--lift:-10px"><rect x="82" y="109" width="15" height="178" rx="4" fill="url(#bamboo)"/><path d="M86 115h7v18h-7z" fill="#a54831"/></g>
+                <g class="bamboo-stick" style="--angle:5deg;--delay:-.21s;--lift:-18px"><rect x="156" y="37" width="16" height="239" rx="4" fill="url(#bamboo)"/><path d="M160 43h8v20h-8z" fill="#a54831"/><path d="M159 80h10m-10 4h10" stroke="#b1874d"/></g>
+                <g class="bamboo-stick" style="--angle:-2deg;--delay:-.04s;--lift:-12px"><rect x="145" y="88" width="15" height="187" rx="4" fill="url(#bamboo)"/><path d="M149 94h7v18h-7z" fill="#a54831"/></g>
+                <g class="bamboo-stick" style="--angle:14deg;--delay:-.27s;--lift:-14px"><rect x="175" y="102" width="15" height="177" rx="4" fill="url(#bamboo)"/><path d="M179 108h7v18h-7z" fill="#a54831"/></g>
+              </g></g>
+              <path d="M69 181Q160 218 251 181L240 346Q160 385 80 346Z" fill="url(#wood)"/>
+              <path d="M69 181Q160 218 251 181L240 346Q160 385 80 346Z" fill="url(#grain)"/>
+              <path d="M94 194l8 160m23-152 4 159m33-156v160m33-163-4 157m34-166-8 157" fill="none" stroke="#58321e" stroke-opacity=".32" stroke-width="1.5"/>
+              <path d="M70 180Q160 217 250 180L249 192Q160 229 71 192Z" fill="url(#rim)"/>
+              <path d="M70 180Q160 217 250 180" fill="none" stroke="#edc48b" stroke-width="4"/>
+              <path d="M77 314Q160 348 243 314l-1 13Q160 361 78 327Z" fill="#5a3b29"/>
+              <path d="M78 317Q160 351 242 317" fill="none" stroke="#c89c5f" stroke-width="2"/>
+              <path d="M80 344Q160 378 240 344l-1 10Q160 389 81 354Z" fill="url(#rim)"/>
+              <path d="M126 226Q160 234 194 226l-2 78Q160 313 128 304Z" fill="url(#label)" stroke="#d9a567" stroke-width="1.5"/>
+              <path d="M132 234Q160 241 188 234l-1 64Q160 305 133 298Z" fill="none" stroke="#e0b87d" stroke-opacity=".65"/>
+              <text x="160" y="264" text-anchor="middle" fill="#f6dfad" font-family="'STKaiti','KaiTi',serif" font-size="27">码</text>
+              <text x="160" y="293" text-anchor="middle" fill="#f6dfad" font-family="'STKaiti','KaiTi',serif" font-size="27">运</text>
+              <path d="M88 219l5 78" stroke="#ffdfa4" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </button>
+        <div class="flying-stick" id="flying-stick" aria-hidden="true"><span>好运签</span></div>
+      </div>
+
+      <div class="draw-controls">
+        <button class="primary-button" id="start-button"><span aria-hidden="true">✦</span> 摇一支好运签 <span class="button-arrow" aria-hidden="true">↗</span></button>
+        <p class="draw-status" id="draw-status" role="status" aria-live="polite">点击签筒或按钮，静候 3.00 秒，看看今天的码运</p>
+      </div>
+      <div class="fortune-legend" aria-label="签文类别"><span><i class="legend-dot upper"></i>上签 · 职场安稳</span><span><i class="legend-dot middle"></i>中签 · 开发顺遂</span><span><i class="legend-dot lower"></i>下签 · Bug 预警</span></div>
+    </section>
+
+    <section class="history-section" aria-labelledby="history-title">
+      <div class="section-heading"><div><span class="section-marker" aria-hidden="true">录</span><h2 id="history-title">最近的签运 <span id="history-count">00</span></h2></div><button class="text-button" id="clear-button" disabled>清空记录 <span aria-hidden="true">↗</span></button></div>
+      <div id="history-list" class="history-list" aria-live="polite"></div>
+      <p class="storage-note" id="storage-note"><span aria-hidden="true">◈</span> 最近 30 条记录仅通过 Cookie 保存在当前浏览器，有效期 365 天。</p>
+    </section>
+  </main>
+
+  <footer><span>一签一念，愿每次运行都有好结果。</span><span>仅供娱乐 · 好运也要靠自己敲出来</span></footer>
+
+  <dialog id="fortune-dialog" class="fortune-dialog" aria-labelledby="fortune-title" aria-describedby="fortune-verse fortune-note">
+    <button class="close-button" id="close-dialog" aria-label="关闭签文">×</button>
+    <div class="dialog-topline">码 上 好 运 <span>FORTUNE RECEIVED</span></div>
+    <div class="fortune-grade" id="fortune-grade"></div>
+    <p class="fortune-number" id="fortune-number"></p>
+    <h2 id="fortune-title"></h2>
+    <p class="fortune-verse" id="fortune-verse"></p>
+    <div class="fortune-note"><span>解 签</span><p id="fortune-note"></p></div>
+    <button class="primary-button dialog-done" id="done-button">收下这支签 <span aria-hidden="true">✓</span></button>
+    <p class="dialog-footnote">签文博一笑，生活由你写。</p>
+  </dialog>
+
+  <dialog id="clear-dialog" class="clear-dialog" aria-labelledby="clear-title">
+    <h2 id="clear-title">清空最近的签运？</h2>
+    <p>将删除当前浏览器里保存的全部抽签记录。</p>
+    <div class="clear-actions"><button class="secondary-button" id="cancel-clear">保留记录</button><button class="primary-button" id="confirm-clear">确认清空</button></div>
+  </dialog>
+  <noscript><p class="noscript">请启用 JavaScript，以使用摇签动画和本地抽签记录。</p></noscript>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "developer-fortune",
+  "version": "1.0.0",
+  "private": true,
+  "description": "码上好运：程序员木质签筒抽签页面",
+  "scripts": {
+    "start": "node server.mjs --open",
+    "serve": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs"
+  }
+}
